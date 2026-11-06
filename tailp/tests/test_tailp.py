@@ -852,76 +852,89 @@ def test_multiple_files() -> None:
 def test_multiple_files_n0() -> None:
     """ test_multiple_files_n0 """
 
-    run_test(['-n', '0', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n0.out')
+    run_test(['-n', '0', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n0.out')
 
 # --------------------------------------------------
 def test_multiple_files_n1() -> None:
     """ test_multiple_files_n1 """
 
-    run_test(['-n', '1', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n1.out')
+    run_test(['-n', '1', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n1.out')
 
 # --------------------------------------------------
 def test_multiple_files_n1_q() -> None:
     """ test_multiple_files_n1_q """
 
-    run_test(['-n', '1', '-q', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n1.q.out')
+    run_test(['-n', '1', '-q', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n1.q.out')
 
 # --------------------------------------------------
 def test_multiple_files_n1_quiet() -> None:
     """ test_multiple_files_n1_quiet """
 
-    run_test(['-n', '1', '--quiet', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n1.q.out')
+    run_test(['-n', '1', '--quiet', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n1.q.out')
 
 # --------------------------------------------------
 def test_multiple_files_n_minus_1() -> None:
     """ test_multiple_files_n_minus_1 """
 
-    run_test(['-n=-1', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n1.out')
+    run_test(['-n=-1', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n1.out')
 
 # --------------------------------------------------
 def test_multiple_files_n_plus_1() -> None:
     """ test_multiple_files_n_plus_1 """
 
-    run_test(['-n', '+1', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n+1.out')
+    run_test(['-n', '+1', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n+1.out')
 
 # --------------------------------------------------
 def test_multiple_files_n3() -> None:
     """ test_multiple_files_n3 """
 
-    run_test(['-n', '3', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n3.out')
+    run_test(['-n', '3', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n3.out')
 
 # --------------------------------------------------
 def test_multiple_files_n_minus_3() -> None:
     """ test_multiple_files_n_minus_3 """
 
-    run_test(['-n=-3', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n3.out')
+    run_test(['-n=-3', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n3.out')
 
 # --------------------------------------------------
 def test_multiple_files_n_plus_3() -> None:
     """ test_multiple_files_n_plus_3 """
 
-    run_test(['-n', '+3', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.n+3.out')
+    run_test(['-n', '+3', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.n+3.out')
 
 # --------------------------------------------------
 def test_multiple_files_c0() -> None:
     """ test_multiple_files_c0 """
 
-    run_test(['-c', '0', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.c0.out')
+    run_test(['-c', '0', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.c0.out')
 
 # --------------------------------------------------
 def test_multiple_files_c3() -> None:
     """ test_multiple_files_c3 """
 
-    run_test(['-c', '3', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.c3.out')
+    run_test(['-c', '3', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.c3.out')
 
 # --------------------------------------------------
 def test_multiple_files_c_minus_3() -> None:
     """ test_multiple_files_c_minus_3 """
 
-    run_test(['-c=-3', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.c3.out')
+    run_test(['-c=-3', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.c3.out')
 
 # --------------------------------------------------
 def test_multiple_files_c_plus_3() -> None:
     """ test_multiple_files_c_plus_3 """
 
-    run_test(['-c', '+3', TWELVE, EMPTY, ONE, THREE, TWO], 'tests/expected/all.c+3.out')
+    run_test(['-c', '+3', TWELVE, EMPTY, ONE, THREE, TWO],
+             'tests/expected/all.c+3.out')

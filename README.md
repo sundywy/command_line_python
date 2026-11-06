@@ -2,6 +2,17 @@
 
 Ideas for a book.
 
+## Setup
+
+Requires [uv](https://docs.astral.sh/uv/).
+
+```bash
+make install   # uv sync: creates .venv with the dev tools
+cd catp && make test
+```
+
+Each `<name>p.py` and `solution.py` runs through uv via its shebang (`./catp.py`).
+
 ## Progress
 
 Chapters follow the sequence of *Command-Line Rust* (Ken Youens-Clark, O'Reilly).

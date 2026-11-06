@@ -25,7 +25,7 @@ def test_exists() -> None:
 
 
 # --------------------------------------------------
-def test_usage(capsys) -> None:
+def test_usage() -> None:
     """ Prints usage """
 
     for flag in ['-h', '--help']:

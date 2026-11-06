@@ -1,3 +1,5 @@
+""" Unit tests for cutp """
+
 import pytest
 from cutp import extract_chars, extract_fields, parse_index, parse_pos
 
@@ -15,6 +17,7 @@ def test_extract_chars() -> None:
 def test_extract_fields() -> None:
     """ Test extract_fields """
 
+    # pylint: disable-next=use-implicit-booleaness-not-comparison
     assert extract_fields([], [0]) == []
     assert extract_fields(['abc', 'def'], [0]) == ['abc']
     assert extract_fields(['abc', 'def'], [1, 0, 2]) == ['def', 'abc']
